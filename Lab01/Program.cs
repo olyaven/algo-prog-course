@@ -113,3 +113,12 @@ Console.WriteLine($"Стипендия: {scholarship} руб.");
 Console.WriteLine($"Ежемесячные расходы: {monthlyExpenses} руб.");
 Console.WriteLine($"Останется за месяц: {moneyLeft} руб.");
 Console.WriteLine($"Останется за семестр: {semesterSavings} руб.");
+
+// найти ошибку
+int totalMinutes = 500;
+int minutesPerLesson = 45;
+
+int fullLessons = totalMinutes / minutesPerLesson;
+int remainingMinutes = totalMinutes % minutesPerLesson;
+
+Console.WriteLine($"{totalMinutes} минут = {fullLessons} полных занятий + {remainingMinutes} минут.");
